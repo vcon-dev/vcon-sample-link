@@ -13,11 +13,6 @@ def run(vcon_uuid, link_name, opts=default_options):
     """Sample vcon link that adds a custom attachment with {"foo": "bar"}"""
     logger.debug("Starting vcon-sample-link")
     
-    # Merge options with defaults
-    merged_opts = default_options.copy()
-    merged_opts.update(opts)
-    opts = merged_opts
-    
     vcon_redis = VconRedis()
     vcon = vcon_redis.get_vcon(vcon_uuid)
     
