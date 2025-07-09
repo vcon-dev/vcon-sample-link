@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "vcon-sample-link"
-version = "0.1.0"
-description = "A sample vcon link that adds custom attachments to vcon objects"
-authors = ["Your Name <you@example.com>"]
+version = "0.1.1"
+description = "A sample vCon link that adds custom attachments to vcon objects"
+authors = ["Sergey Lyapustin <s.lyapustin@gmail.com>"]
 readme = "README.md"
 packages = [{include = "vcon_sample_link"}]
 
