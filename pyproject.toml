@@ -1,3 +1,28 @@
+[project]
+name = "vcon-sample-link"
+version = "0.1.1"
+description = "A sample vCon link that adds custom attachments to vcon objects"
+authors = [
+  { name = "Sergey Lyapustin", email = "s.lyapustin@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "vcon>=0.7.0",
+]
+license = "MIT"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-pylint",
+    "ruff>=0.1.0",
+    # Temporary workaround for vcon-lib issue: https://github.com/vcon-dev/vcon-lib/issues/53
+    # These should not be needed once the unused imports are fixed in vcon-lib
+    "pillow",
+    "pypdf",
+]
+
 [tool.poetry]
 name = "vcon-sample-link"
 version = "0.1.1"
@@ -8,6 +33,11 @@ packages = [{include = "vcon_sample_link"}]
 
 [tool.poetry.dependencies]
 python = ">=3.12,<3.13"
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-function-docstring",
+]
 
 [build-system]
 requires = ["poetry-core"]

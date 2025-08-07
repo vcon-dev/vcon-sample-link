@@ -1,4 +1,4 @@
-from .sample_link import run
+from .link import run
 
 __version__ = "0.1.1"
-__all__ = ["run"] 
+__all__ = ["run"]

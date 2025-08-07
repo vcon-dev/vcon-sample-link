@@ -136,4 +136,6 @@ dmypy.json
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+.ruff_cache/
