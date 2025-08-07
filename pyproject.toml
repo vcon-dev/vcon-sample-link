@@ -3,7 +3,7 @@ name = "vcon-sample-link"
 version = "0.1.1"
 description = "A sample vCon link that adds custom attachments to vcon objects"
 authors = [
-  { name = "Sergey Lyapustin", email = "s.lyapustin@gmail.com" }
+  { name = "Sergey Lyapustin", email = "sergey.lyapustin@strolid.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,7 @@ dev = [
 name = "vcon-sample-link"
 version = "0.1.1"
 description = "A sample vCon link that adds custom attachments to vcon objects"
-authors = ["Sergey Lyapustin <s.lyapustin@gmail.com>"]
+authors = ["Sergey Lyapustin <sergey.lyapustin@strolid.com>"]
 readme = "README.md"
 packages = [{include = "vcon_sample_link"}]
 
